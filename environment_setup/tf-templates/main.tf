@@ -20,14 +20,7 @@ data "azurerm_client_config" "currentconfig" {
 
 #--------------------------------------------------------------------------------
 
-# Storage account for AML Service
-resource "azurerm_storage_account" "amlstor" {
-  name                     = "${var.BASE_NAME}amlsa"
-  location                 = data.azurerm_resource_group.amlrg.location
-  resource_group_name      = data.azurerm_resource_group.amlrg.name
-  account_tier             = "Standard"
-  account_replication_type = "LRS"
-}
+
 
 # Keyvault for AML Service
 resource "azurerm_key_vault" "amlkv" {
