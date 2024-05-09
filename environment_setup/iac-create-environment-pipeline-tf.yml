@@ -37,7 +37,7 @@ steps:
     ensureBackend: true
     backendAzureRmResourceGroupLocation: $(LOCATION)
     backendAzureRmResourceGroupName: $(RESOURCE_GROUP)
-    backendAzureRmStorageAccountName: '$(BASE_NAME)amlsa'
+    backendAzureRmStorageAccountName: '$(BASE_NAME)statestor'
     backendAzureRmStorageAccountSku: 'Standard_LRS'
     backendAzureRmContainerName: 'tfstate-cont'
     backendAzureRmKey: 'mlopsinfra.tfstate'
